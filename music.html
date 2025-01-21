@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charley Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Charley Music Player</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guidelines.html">Community Guidelines</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="showcase.html">Creativity Showcase</a></li>
+                <li><a href="https://discord.gg/sxXg4rGz6G" target="_blank">Join the Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="music-player">
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <div id="playlist"></div>
+            </div>
+            <div class="player">
+                <img id="song-image" src="" alt="Song Image" class="song-image">
+                <div class="track-info">
+                    <h3 id="track-title">No song playing</h3>
+                    <div class="controls">
+                        <button id="prev-button">Prev</button>
+                        <button id="play-button">Play</button>
+                        <button id="pause-button">Pause</button>
+                        <button id="next-button">Next</button>
+                    </div>
+                </div>
+                <audio id="audio" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Elite's Official Server</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
