@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #000; /* Solid black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(30, 144, 255, 0.2); /* Light blue translucent hover */
+    transform: scale(1.1);
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: url('https://source.unsplash.com/1920x1080/?music,abstract') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.welcome-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Hall of Charley Section */
+.hall-of-charley-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #121212; /* Matches overall page background */
+    color: #fff;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.hall-image {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures images maintain their aspect ratio and fill the box */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hall-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Guidelines Section */
+.guidelines {
+    text-align: center;
+    padding: 2rem;
+    background: #121212; /* Match the dark theme */
+    color: #fff;
+}
+
+.guidelines h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.guidelines p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.guidelines-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.guideline {
+    background: rgba(30, 30, 30, 0.9); /* Darker box */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.guideline:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.guideline h3 {
+    color: #1E90FF; /* Light blue for headings */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.guideline p {
+    font-size: 1rem;
+    color: #d3d3d3; /* Light gray for text */
+}
+
+/* Footer */
+footer {
+    background-color: #121212; /* Match the page background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* General styles for music player */
+.music-player {
+    text-align: center;
+    padding: 20px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: #3e3e3e;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.song-item:hover {
+    background: #1e1e1e;
+}
+
+.song-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.song-name {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.song-artist {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background-color: #666;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.time {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #bbb;
+}
+
